@@ -20,10 +20,10 @@ The next line of code is the label_tag - this just establishes the name for the 
 
 The following line of code, text_field_tag is where I'm adding a field name :search and :search id  (if inspecting the page you can see these attributes) - which is coming from params[:search] - this is permitted or whitelisted through client params in the clients controller. That information is coming from the class method created inside of the Client Model. - self.search(search) - the argument here is then applied within the method itself. The text_field_tag line is the line that accepts in the value I type into the input box through params (that value can been inside of the inspection of the page ie. "Am" for Amazing). 
 
-**I have edited the text_field_tag line of code to reflect that only :search  is being used instead of <%=text_field_tag:search, params[:search] %>. The new code should read: 
-<%=text_field_tag :search %> as highlighted above inside the block. After further review, including params[:search] as second argument wasn't necessary to fulfill the search function. **
+I have edited the text_field_tag line of code to reflect that only :search  is being used instead of <%=text_field_tag:search, params[:search] %>. The new code should read: 
+<%=text_field_tag :search %> as highlighted above inside the block. After further review, including params[:search] as second argument wasn't necessary to fulfill the search function as its able to read the 
 
-The last line of this form is an actual submit button or submit_tag  which sends the form data I type in. The first part of this defines the title of submit button, in this case, "search". The second of this line of code isn't really necessary after I reviewed this further, you can still use this search form but inside of the url bar you get a &commit=search. I'm not 100% sure but I think a  regular submit should be able to handle this submission. 
+The last line of this form is an actual submit button or submit_tag  which sends the form data I type in. The first part of this defines the title of submit button, in this case, "search". The second of this line of code isn't really necessary after I reviewed this further, you can still use this search form but inside of the url bar you get a &commit=search. I'm not 100% sure but I think a  regular submit should be able to handle this submission. I have edited the code block above to only reflect the :search include inside of the submit_tag. 
 
 At the end, there is an end statement which closes the block and any code executed inside of it. 
 
