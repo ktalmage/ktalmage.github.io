@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "form_tag helper for search "
-date:       2020-06-22 15:58:09 +0000
+title:      "form tag helper for search "
+date:       2020-06-22 11:58:10 -0400
 permalink:  form_tag_helper_for_search
 ---
 
